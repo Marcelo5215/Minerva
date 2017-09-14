@@ -82,6 +82,7 @@ td {
 }
 /*  CHECK  */
 .checkImage {
+  margin-top: 15px;
   width: 60px;
   height: auto;
 }
@@ -93,7 +94,7 @@ td {
   color: #009938;
 }
 .check li {
-  margin-top: 15px;
+  margin-top: 10px;
 }
 
 /*

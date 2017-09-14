@@ -5,7 +5,7 @@ body {
 /*
   BARRA DE NAVEGACAO
 */
-ul.navMenu {
+.navMenu {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -13,7 +13,7 @@ ul.navMenu {
     background-color: #009938;
 }
 
-li {
+li.navItem {
   display: inline;
   float: left;
 }

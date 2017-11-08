@@ -43,14 +43,14 @@ footer img{
   transition: 0.5s;
 }
 
-.developer2 {
+#developer2 {
     width:100%;
 	text-align:center;
 	padding-left: 0.65cm;
 
 }
 
-.developer1 {
+#developer1 {
     width:100%;
 	text-align:center;
 	padding-left: 0.2cm;

@@ -1,0 +1,221 @@
+/*.container{
+	width: auto;
+	overflow: auto; /* Impede que o footer "invada" o espaco do container */
+/*}
+
+.container ul {
+    list-style-type: none; /* remove the • */
+/*}
+
+.container ul li {
+	float: left;
+    width: 25%;
+	margin-bottom: 1%;
+	margin-top: 1%;
+}*/
+
+/* Texto */
+h3{
+	font-family: 'Poppins', sans-serif;
+	font-weight: bold;
+	margin-bottom: 2%;
+	margin-left: 1%;
+}
+
+/* Tabela */
+.buttons { 
+  margin-left: 1%;
+  width: 100%;
+  table-layout: fixed;
+  border-collapse: collapse;
+}
+
+/* Botao eh elemento da tabela */
+.button {
+	font-family: 'Poppins', sans-serif;
+	width: 80%;
+	margin-bottom: 1%;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+	font-weight: bold;
+}
+
+/* Botoes especificos */
+.button1 {
+	background-color: #b3c6ff;
+}
+.button1:hover{
+	background-color: #000d33;
+}
+
+.button2 {
+	background-color: #4d79ff;
+}
+.button2:hover{
+	background-color: #000d33;
+}
+
+.button3 {
+	background-color: #0039e6;
+}
+.button3:hover{
+	background-color: #000d33;
+}
+
+.button4 {
+	background-color: #002699;
+}
+.button4:hover{
+	background-color: #000d33;
+}
+
+.button5 {
+	background-color: #b3ffec;
+	color: black;
+}
+.button5:hover{
+	background-color: #004d39;
+	color: white;
+}
+
+.button6 {
+	background-color: #33ffcc;
+	color: black;
+}
+.button6:hover{
+	background-color: #004d39;
+	color: white;
+}
+
+.button7 {
+	background-color: #00e6ac;
+}
+.button7:hover{
+	background-color: #004d39;
+}
+
+.button8 {
+	background-color: #009973;
+}
+.button8:hover{
+	background-color: #004d39;
+}
+
+.button9 {
+	background-color: #dd99ff;
+}
+.button9:hover{
+	background-color: #33004d;
+}
+
+.button10 {
+	background-color: #c44dff;
+}
+.button10:hover{
+	background-color: #33004d;
+}
+
+.button11 {
+	background-color: #9900e6;
+}
+.button11:hover{
+	background-color: #33004d;
+}
+
+.button12 {
+	background-color: #660099;
+}
+.button12:hover{
+	background-color: #33004d;
+}
+
+.button13 {
+	background-color: #ffd480;
+}
+.button13:hover{
+	background-color: #4d3300;
+}
+
+.button14 {
+	background-color: #ffbb33;
+}
+.button14:hover{
+	background-color: #4d3300;
+}
+
+.button15 {
+	background-color: #ffaa00;
+}
+.button15:hover{
+	background-color: #4d3300;
+}
+
+.button16 {
+	background-color: #cc8800;
+}
+.button16:hover{
+	background-color: #4d3300;
+}
+
+.button17 {
+	background-color: #ffb380;
+}
+.button17:hover{
+	background-color: #4d1f00;
+}
+
+.button18 {
+	background-color: #ff944d;
+}
+.button18:hover{
+	background-color: #4d1f00;
+}
+
+.button19 {
+	background-color: #e65c00;
+}
+.button19:hover{
+	background-color: #4d1f00;
+}
+
+.button20 {
+	background-color: #993d00;
+}
+.button20:hover{
+	background-color: #4d1f00;
+}
+
+.button21 {
+	background-color: #ff8080;
+}
+.button21:hover{
+	background-color: #660000;
+}
+
+.button22 {
+	background-color: #ff3333;
+}
+.button22:hover{
+	background-color: #660000;
+}
+
+.button23 {
+	background-color: #e60000;
+}
+.button23:hover{
+	background-color: #660000;
+}
+
+.button24 {
+	background-color: #990000;
+}
+.button24:hover{
+	background-color: #660000;
+}
+
+
+

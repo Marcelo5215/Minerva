@@ -11,6 +11,15 @@ body {
 	width: 90%;
 	max-width: 2000px;
 	overflow: hidden;
+	
+	/* Texto */
+	font-family: 'Poppins', sans-serif;
+}
+
+p{
+	font-weight: bold;
+	font-size: 150%;
+	margin-left: 25px;
 }
 
 /* Dividr largura de pontos e imagem troféu pela metade */
@@ -19,9 +28,9 @@ th.head_points, th.head_trophy {
 }
 
 table {
-	font-family: 'Poppins', sans-serif;
+	margin: 25px;
     border-collapse: collapse;
-    width: 100%;
+    width: 90%;
     background: #fff;
 }
 
@@ -35,6 +44,10 @@ th {
 td, th {
     padding: 1em 1.5em;
     text-align: left;
+}
+
+th.head_rank{
+	text-align: center;
 }
 
 tbody th {
@@ -65,28 +78,41 @@ img.profile{
 	transition: 0.5s;
 }
 
-td.name {
-	line-height: 350%;
-}
-
 td.position {
+	text-align: center;
+	width: 15%;
 	font-size: 150%;
 	text-transform: capitalize;
 	font-weight: bold;
-	
 }
 
-td.points {
+td.name {
+	line-height: 350%;
+	width: 45%;
+}
+
+td.trophy {
+	width: 12.5%;
 	font-weight: bold;
 }
 
-td.change.down {
+td.points {
+	width: 17.5%;
+	font-weight: bold;
+}
+
+td.change, th.head_change{
+	width: 22.5%;
+	text-align: center;
+}
+
+td.down {
 	font-style: italic; 
 	color: red;
 	font-weight: bold;
 }
 
-td.change.up{
+td.up{
 	font-style: italic; 
 	color: green;
 	font-weight: bold;

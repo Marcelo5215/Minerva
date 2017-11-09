@@ -1,0 +1,102 @@
+body {
+	font-family: 'Lato', Arial, sans-serif;
+	color: #989c9b;
+}
+
+.ranking {
+	color: black;
+	line-height: 1.5em;
+	margin: 0 auto;
+	padding: 2em 0 3em;
+	width: 90%;
+	max-width: 2000px;
+	overflow: hidden;
+}
+
+/* Dividr largura de pontos e imagem troféu pela metade */
+th.head_points, th.head_trophy {
+	width: 10%;
+}
+
+table {
+	font-family: 'Poppins', sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    background: #fff;
+}
+
+th {
+    background-color: #009938;
+	font-weight: bold;
+    color: #fff;
+    white-space: nowrap;
+}
+
+td, th {
+    padding: 1em 1.5em;
+    text-align: left;
+}
+
+tbody th {
+	background-color: #2ea879;
+}
+tbody tr:nth-child(2n-1) {
+    background-color: #f5f5f5;
+    transition: all .125s ease-in-out;
+}
+
+img.trophy{
+	height: 60px;
+	width: 55px;
+	margin: auto;
+}
+
+img.profile{
+	float: left;
+	display: block;
+	border-style: solid;
+	border-color: #000000;
+	border-width: 3px;
+	border-radius: 40px;
+	width: 50px;
+	height: 50px;
+	margin-top: auto;
+	margin-right: 16px;
+	transition: 0.5s;
+}
+
+td.name {
+	line-height: 350%;
+}
+
+td.position {
+	font-size: 150%;
+	text-transform: capitalize;
+	font-weight: bold;
+	
+}
+
+td.points {
+	font-weight: bold;
+}
+
+td.change.down {
+	font-style: italic; 
+	color: red;
+	font-weight: bold;
+}
+
+td.change.up{
+	font-style: italic; 
+	color: green;
+	font-weight: bold;
+}
+
+/* Animacoes */
+img.profile:hover{
+	border-color: #004d00;
+	transform: scale(1.1, 1.1);
+}
+tbody tr:hover {
+    background-color: #00ff84;
+}

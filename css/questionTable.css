@@ -42,13 +42,15 @@ td {
   TABLE HEADER
 */
 .question {
-  width: 70%;
+  width: 68%;
 }
+
+
 .answerNum, .points{
   width: 12%;
 }
 .check {
-  width: 6%;
+  width: 8%;
 }
 
 /*  FIRST CELL  */
@@ -74,10 +76,17 @@ td {
 }
 /*  VOTE   */
 .arrows {
-  margin-left: 20px;
+  margin-left: 22px;
   width: 40px;
   height: 15px;
+  overflow: hidden;
 }
+
+.voteNum{
+	text-align: left;
+	overflow: hidden;
+}
+
 .voteNum {
   margin-left: 32px;
   font-family: 'Poppins', sans-serif;
@@ -86,12 +95,14 @@ td {
 }
 /*  CHECK  */
 .checkImage {
+  margin: auto;
   margin-top: 15px;
   width: 60px;
   height: auto;
+  display: block;
 }
 .check li a{
-  margin-left: 3px;
+  margin-right: 5px;
   text-align: center;
   text-decoration: none;
   font-family: 'Poppins', sans-serif;

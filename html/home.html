@@ -37,149 +37,75 @@
         </li>
       </ul>
     </nav>
+	
+	<!-- Codigo em php pra pegar dados do DB -->
+	<?php
+		$db = pg_connect("host=localhost port=5432 dbname=ES-FINAL user=postgres password=trabalho_ES");
+		$result = pg_query($db, 'SELECT * FROM "Pergunta" AS p 
+			JOIN "Usuario" AS u ON p."usuarioID" = u."usuarioID"
+			ORDER BY p.rating DESC;');
+		$numrows = pg_numrows($result)	
+		
+		
+	?>
 
+	
     <table class="questionTable">
-      <tr class="questionCell">
-        <td class="question">
-          <ul>
-            <li class="questionTitle"><h2><a href="#">Pergunta</a></h2></li>
-            <li class="description">
-              <p><small>
-                Lorem ipsum dolor sit amet,
-                consectetur adipiscing elit.
-                Quisque vitae ullamcorper massa.
-                Pellentesque rutrum, sapien non elementum
-                pellentesque, velit tortor imperdiet turpis, et
-                sagittis mi est at nulla.
-              </small></p>
-            </li>
-            <li>Tags:
-              <ul class="tagList">
-                <li></li>
-              </ul>
-            </li>
-          </ul>
-        </td>
-        <td class="answer">
-          <ul>
-            <li>25</li>
-            <li>Respostas</li>
-          </ul>
-        </td>
-        <td class="points">
-          <ul>
-            <li><a href="#">
-              <img class="arrows" src="../images/upArrow.png" alt="up Vote">
-            </a></li>
-            <li class="voteNum">5</li>
-            <li><a href="#">
-              <img class="arrows" src="../images/downArrow.png" alt="up Vote">
-            </a></li>
-          </ul>
-        </td>
-        <td class="check">
-          <ul>
-            <li>
-              <img class="checkImage" src="../images/check.png" alt="Respondida">
-            </li>
-            <li><a href="#">Autor</a></li>
-          </ul>
-        </td>
-      </tr>
-      <tr class="questionCell">
-        <td class="question">
-          <ul>
-            <li class="questionTitle"><h2><a href="#">Pergunta</a></h2></li>
-            <li class="description">
-              <p><small>
-                Lorem ipsum dolor sit amet,
-                consectetur adipiscing elit.
-                Quisque vitae ullamcorper massa.
-                Pellentesque rutrum, sapien non elementum
-                pellentesque, velit tortor imperdiet turpis, et
-                sagittis mi est at nulla.
-              </small></p>
-            </li>
-            <li>Tags:
-              <ul class="tagList">
-                <li></li>
-              </ul>
-            </li>
-          </ul>
-        </td>
-        <td class="answer">
-          <ul>
-            <li>25</li>
-            <li>Respostas</li>
-          </ul>
-        </td>
-        <td class="points">
-          <ul>
-            <li><a href="#">
-              <img class="arrows" src="../images/upArrow.png" alt="up Vote">
-            </a></li>
-            <li class="voteNum">5</li>
-            <li><a href="#">
-              <img class="arrows" src="../images/downArrow.png" alt="up Vote">
-            </a></li>
-          </ul>
-        </td>
-        <td class="check">
-          <ul>
-            <li>
-              <img class="checkImage" src="../images/check.png" alt="Respondida">
-            </li>
-            <li><a href="#">Autor</a></li>
-          </ul>
-        </td>
-      </tr>
-      <tr class="questionCell">
-        <td class="question">
-          <ul>
-            <li class="questionTitle"><h2><a href="#">Pergunta</a></h2></li>
-            <li class="description">
-              <p><small>
-                Lorem ipsum dolor sit amet,
-                consectetur adipiscing elit.
-                Quisque vitae ullamcorper massa.
-                Pellentesque rutrum, sapien non elementum
-                pellentesque, velit tortor imperdiet turpis, et
-                sagittis mi est at nulla.
-              </small></p>
-            </li>
-            <li>Tags:
-              <ul class="tagList">
-                <li></li>
-              </ul>
-            </li>
-          </ul>
-        </td>
-        <td class="answer">
-          <ul>
-            <li>25</li>
-            <li>Respostas</li>
-          </ul>
-        </td>
-        <td class="points">
-          <ul>
-            <li><a href="#">
-              <img class="arrows" src="../images/upArrow.png" alt="up Vote">
-            </a></li>
-            <li class="voteNum">5</li>
-            <li><a href="#">
-              <img class="arrows" src="../images/downArrow.png" alt="up Vote">
-            </a></li>
-          </ul>
-        </td>
-        <td class="check">
-          <ul>
-            <li>
-              <img class="checkImage" src="../images/check.png" alt="Respondida">
-            </li>
-            <li><a href="#">Autor</a></li>
-          </ul>
-        </td>
-      </tr>
+	<?php 
+	  for($ri = 0; $ri < $numrows; $ri++){
+	      echo '<tr class="questionCell">';
+		  $row = pg_fetch_array($result, $ri);
+			echo '<td class="question">
+			  <ul>
+				<li class="questionTitle"><h2><a href="#">';
+				  echo $row['perg_titulo'];
+				echo '</a></h2></li>
+				<li class="description">
+				  <p><small>';
+				  echo $row['perg_corpo'];
+				echo '</small></p>
+				</li>
+				<li>Tags:
+				  <ul class="tagList">
+					<li></li>
+				  </ul>
+				</li>
+			  </ul>
+			</td>
+			<td class="answer">
+			  <ul>
+				<li>25</li>
+				<li>Respostas</li>
+			  </ul>
+			</td>
+			<td class="points">
+			  <ul>
+				<li><a href="#">
+				  <img class="arrows" src="../images/upArrow.png" alt="up Vote">
+				</a></li>
+				<li class="voteNum">';
+				echo $row["rating"];
+				echo '</li>
+				<li><a href="#">
+				  <img class="arrows" src="../images/downArrow.png" alt="up Vote">
+				</a></li>
+			  </ul>
+			</td>
+			<td class="check">
+			  <ul>
+				<li>
+				  <img class="checkImage" src="../images/check.png" alt="Respondida">
+				</li>
+				<li><a href="#">';
+				echo $row["nome"];
+				echo '</a></li>
+			  </ul>
+			</td>
+		  </tr>
+		  ';
+		 }
+	   pg_close($db);
+      ?>
     </table>
 
   </body>

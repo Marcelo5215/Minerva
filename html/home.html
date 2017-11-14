@@ -22,7 +22,7 @@
         <li class="navItem"><a href="quest.html">Perguntas</a></li>
         <li class="navItem"><a href="category.html">Categorias</a></li>
         <li class="navItem"><a href="rank.html">Rank</a></li>
-        <li class="navItem"><a href="university.html">Universidade</a></li>
+        <li class="navItem"><a href="achievments.html">Conquistas</a></li>
 
         <li class="notification">
           <a href="notification.html">
@@ -37,21 +37,21 @@
         </li>
       </ul>
     </nav>
-	
+
 	<!-- Codigo em php pra pegar dados do DB -->
 	<?php
 		$db = pg_connect("host=localhost port=5432 dbname=ES-FINAL user=postgres password=trabalho_ES");
-		$result = pg_query($db, 'SELECT * FROM "Pergunta" AS p 
+		$result = pg_query($db, 'SELECT * FROM "Pergunta" AS p
 			JOIN "Usuario" AS u ON p."usuarioID" = u."usuarioID"
 			ORDER BY p.rating DESC;');
-		$numrows = pg_numrows($result)	
-		
-		
+		$numrows = pg_numrows($result)
+
+
 	?>
 
-	
+
     <table class="questionTable">
-	<?php 
+	<?php
 	  for($ri = 0; $ri < $numrows; $ri++){
 	      echo '<tr class="questionCell">';
 		  $row = pg_fetch_array($result, $ri);
@@ -115,14 +115,14 @@
      <p>
        <h1>Minerva - Engenharia de Software (2017/2)<h1><br>
         <div class="developers">
-		  <div id="developer1">	
+		  <div id="developer1">
           <a href="mailto:rekanobre@gmail.com"><img src="../images/dev/renato.jpg" alt=""></a>
              <a href="mailto:rekanobre@gmail.com">Renato Nobre</a><br>
 		  </div>
 		  <div id="developer2">
           <a href="mailto:marcelo.araujo1296@gmail.com"><img src="../images/dev/marcelo.jpeg" alt=""></a>
              <a href="mailto:marcelo.araujo1296@gmail.com">Marcelo de Araujo</a><br>
-		  </div>	  
+		  </div>
           <a href="mailto:drcfts@gmail.com"><img src="../images/dev/davi.jpg" alt=""></a>
              <a href="mailto:drcfts@gmail.com">Davi Freitas</a><br>
         </div>

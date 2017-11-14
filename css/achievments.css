@@ -1,0 +1,10 @@
+.row {
+  display: block;
+}
+
+.column img {
+  width: 20%;
+  height: auto;
+  padding: 30px;
+  margin-left: 15%;
+}

@@ -45,69 +45,67 @@
 			JOIN "Usuario" AS u ON p."usuarioID" = u."usuarioID"
 			ORDER BY p.rating DESC;');
 		$numrows = pg_numrows($result)
-
-
 	?>
 
-
-    <table class="questionTable">
-	<?php
-	  for($ri = 0; $ri < $numrows; $ri++){
-	      echo '<tr class="questionCell">';
-		  $row = pg_fetch_array($result, $ri);
-			echo '<td class="question">
-			  <ul>
-				<li class="questionTitle"><h2><a href="#">';
-				  echo $row['perg_titulo'];
-				echo '</a></h2></li>
-				<li class="description">
-				  <p><small>';
-				  echo $row['perg_corpo'];
-				echo '</small></p>
-				</li>
-				<li>Tags:
-				  <ul class="tagList">
-					<li></li>
-				  </ul>
-				</li>
-			  </ul>
-			</td>
-			<td class="answer">
-			  <ul>
-				<li>25</li>
-				<li>Respostas</li>
-			  </ul>
-			</td>
-			<td class="points">
-			  <ul>
-				<li><a href="#">
-				  <img class="arrows" src="../images/upArrow.png" alt="up Vote">
-				</a></li>
-				<li class="voteNum">';
-				echo $row["rating"];
-				echo '</li>
-				<li><a href="#">
-				  <img class="arrows" src="../images/downArrow.png" alt="up Vote">
-				</a></li>
-			  </ul>
-			</td>
-			<td class="check">
-			  <ul>
-				<li>
-				  <img class="checkImage" src="../images/check.png" alt="Respondida">
-				</li>
-				<li><a href="#">';
-				echo $row["nome"];
-				echo '</a></li>
-			  </ul>
-			</td>
-		  </tr>
-		  ';
-		 }
-	   pg_close($db);
-      ?>
-    </table>
-
+    <div class="tablePlaceholder">
+        <table class="questionTable">
+    	<?php
+    	  for($ri = 0; $ri < $numrows; $ri++){
+    	      echo '<tr class="questionCell">';
+    		  $row = pg_fetch_array($result, $ri);
+    			echo '<td class="question">
+    			  <ul>
+    				<li class="questionTitle"><h2><a href="#">';
+    				  echo $row['perg_titulo'];
+    				echo '</a></h2></li>
+    				<li class="description">
+    				  <p><small>';
+    				  echo $row['perg_corpo'];
+    				echo '</small></p>
+    				</li>
+    				<li>Tags:
+    				  <ul class="tagList">
+    					<li></li>
+    				  </ul>
+    				</li>
+    			  </ul>
+    			</td>
+    			<td class="answer">
+    			  <ul>
+    				<li>25</li>
+    				<li>Respostas</li>
+    			  </ul>
+    			</td>
+    			<td class="points">
+    			  <ul>
+    				<li><a href="#">
+    				  <img class="arrows" src="../images/upArrow.png" alt="up Vote">
+    				</a></li>
+    				<li class="voteNum">';
+    				echo $row["rating"];
+    				echo '</li>
+    				<li><a href="#">
+    				  <img class="arrows" src="../images/downArrow.png" alt="up Vote">
+    				</a></li>
+    			  </ul>
+    			</td>
+    			<td class="check">
+    			  <ul>
+    				<li>
+    				  <img class="checkImage" src="../images/check.png" alt="Respondida">
+    				</li>
+    				<li><a href="#">';
+    				echo $row["nome"];
+    				echo '</a></li>
+    			  </ul>
+    			</td>
+    		  </tr>
+    		  ';
+    		 }
+    	   pg_close($db);
+          ?>
+        </table>
+	</div>
   </body>
 
 

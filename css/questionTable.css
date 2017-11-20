@@ -24,6 +24,10 @@ td {
   border-bottom-width: 2px;
 }
 
+.tablePlaceholder {
+    
+}
+
 .questionTable {
   width: 95%;
   margin-left: 2.5%;

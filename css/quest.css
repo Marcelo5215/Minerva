@@ -34,11 +34,11 @@ h3 {
 }
 
 body {
-  background: #FFFFFF; /* fallback for old browsers */
-  background: -webkit-linear-gradient(right, #76b852, #FFFFFF);
-  background: -moz-linear-gradient(right, #76b852, #FFFFFF);
-  background: -o-linear-gradient(right, #76b852, #FFFFFF);
-  background: linear-gradient(to left, #76b852, #FFFFFF);
+  background: #b5bec6; /* fallback for old browsers */
+  background: -webkit-linear-gradient(right, #b5bec6, #b5bec6);
+  background: -moz-linear-gradient(right, #b5bec6, #b5bec6);
+  background: -o-linear-gradient(right, #b5bec6, #b5bec6);
+  background: linear-gradient(to left, #b5bec6, #b5bec6);
   font-family: "Roboto", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -73,7 +73,7 @@ body {
   font-family: "Roboto", sans-serif;
   text-transform: uppercase;
   outline: 0;
-  background: #009938;
+  background: #2D4654;
   width: 100%;
   border: 0;
   padding: 15px;
@@ -94,7 +94,7 @@ body {
   font-size: 12px;
 }
 .form .message a {
-  color: #4CAF50;
+  color: #2D4654;
   text-decoration: none;
 }
 
@@ -133,11 +133,11 @@ body {
 }
 
 body {
-  background: #76b852; /* fallback for old browsers */
-  background: -webkit-linear-gradient(right, #76b852, #8DC26F);
-  background: -moz-linear-gradient(right, #76b852, #8DC26F);
-  background: -o-linear-gradient(right, #76b852, #8DC26F);
-  background: linear-gradient(to left, #76b852, #8DC26F);
+  background: #b5bec6; /* fallback for old browsers */
+  background: -webkit-linear-gradient(right, #b5bec6, #b5bec6);
+  background: -moz-linear-gradient(right, #b5bec6, #b5bec6);
+  background: -o-linear-gradient(right, #b5bec6, #b5bec6);
+  background: linear-gradient(to left, #b5bec6, #b5bec6);
   font-family: "Roboto", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;

@@ -52,6 +52,17 @@
     /*padding: 45px;*/
 }
 
+
+.info-left {
+    display: inline;
+    float: left;
+}
+
+.info-right {
+    display: inline;
+    float: right;
+}
+
 .user-info {
   background: #FFFFFF;
   width: 550px;

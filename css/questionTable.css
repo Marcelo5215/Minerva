@@ -20,12 +20,12 @@ td {
   padding-left: 10px;
   padding-bottom: 10px;
   border-bottom-style: solid;
-  border-color: #009938;
+  border-color: #2D4654;
   border-bottom-width: 2px;
 }
 
 .tablePlaceholder {
-    
+
 }
 
 .questionTable {
@@ -34,7 +34,7 @@ td {
   margin-right: 2.5%;
   margin-top: 40px;
   border-collapse: collapse;
-  border: 2px solid #009938;
+  border: 2px solid #2D4654;
   border-radius: 5px;
 }
 
@@ -69,7 +69,7 @@ td {
   text-align: center;
   text-decoration: none;
   font-family: 'Poppins', sans-serif;
-  color: #009938;
+  color: #2D4654;
 }
 .answer ul {
   margin-left: 20px;
@@ -82,7 +82,7 @@ td {
 .arrows {
   margin-left: 22px;
   width: 40px;
-  height: 15px;
+  height: auto;
   overflow: hidden;
 }
 
@@ -95,7 +95,7 @@ td {
   margin-left: 32px;
   font-family: 'Poppins', sans-serif;
   font-size: 24px;
-  color: #009938;
+  color: #2D4654;
 }
 /*  CHECK  */
 .checkImage {
@@ -110,7 +110,7 @@ td {
   text-align: center;
   text-decoration: none;
   font-family: 'Poppins', sans-serif;
-  color: #009938;
+  color: #2D4654;
 }
 .check li {
   margin-top: 10px;

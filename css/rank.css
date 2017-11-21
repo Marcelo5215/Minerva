@@ -11,7 +11,7 @@ body {
 	width: 90%;
 	max-width: 2000px;
 	overflow: hidden;
-	
+
 	/* Texto */
 	font-family: 'Poppins', sans-serif;
 }
@@ -35,7 +35,7 @@ table {
 }
 
 th {
-    background-color: #009938;
+    background-color: #2D4654;
 	font-weight: bold;
     color: #fff;
     white-space: nowrap;
@@ -51,7 +51,7 @@ th.head_rank{
 }
 
 tbody th {
-	background-color: #2ea879;
+	background-color: #2D4654;
 }
 tbody tr:nth-child(2n-1) {
     background-color: #f5f5f5;
@@ -107,13 +107,13 @@ td.change, th.head_change{
 }
 
 td.down {
-	font-style: italic; 
+	font-style: italic;
 	color: red;
 	font-weight: bold;
 }
 
 td.up{
-	font-style: italic; 
+	font-style: italic;
 	color: green;
 	font-weight: bold;
 }
@@ -124,5 +124,5 @@ img.profile:hover{
 	transform: scale(1.1, 1.1);
 }
 tbody tr:hover {
-    background-color: #00ff84;
+    background-color: #b5bec6;
 }

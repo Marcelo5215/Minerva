@@ -42,10 +42,12 @@ ALTER TABLE "Usuario" ADD CONSTRAINT "Key2" PRIMARY KEY ("usuarioID")
 -- USING INDEX TABLESPACE "Tablespace2"
 ;
 
+ALTER TABLE public."Usuario" ADD COLUMN nome character varying(50)
+
 ALTER TABLE "Usuario" ADD CONSTRAINT "email" UNIQUE ("email")
 -- USING INDEX TABLESPACE "Tablespace2"
 ;
--- Create foreign keys (relationships) section ------------------------------------------------- 
+-- Create foreign keys (relationships) section -------------------------------------------------
 
 ALTER TABLE "Pergunta" ADD CONSTRAINT "Relationship2" FOREIGN KEY ("usuarioID") REFERENCES "Usuario" ("usuarioID") ON DELETE NO ACTION ON UPDATE NO ACTION
 ;

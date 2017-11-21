@@ -84,6 +84,7 @@ td {
   width: 40px;
   height: auto;
   overflow: hidden;
+  filter: grayscale(100%);
 }
 
 .voteNum{
@@ -104,6 +105,7 @@ td {
   width: 60px;
   height: auto;
   display: block;
+  filter: grayscale(100%);
 }
 .check li a{
   margin-right: 5px;

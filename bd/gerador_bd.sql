@@ -42,7 +42,7 @@ ALTER TABLE "Usuario" ADD CONSTRAINT "Key2" PRIMARY KEY ("usuarioID")
 -- USING INDEX TABLESPACE "Tablespace2"
 ;
 
-ALTER TABLE public."Usuario" ADD COLUMN nome character varying(50)
+ALTER TABLE "Usuario" ADD COLUMN "nome" character varying(50);
 
 ALTER TABLE "Usuario" ADD CONSTRAINT "email" UNIQUE ("email")
 -- USING INDEX TABLESPACE "Tablespace2"

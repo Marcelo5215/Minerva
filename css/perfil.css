@@ -64,20 +64,43 @@
     padding: 25px;
 }
 
-
-.info-left {
-    display: inline;
-    float: left;
-}
-
-.info-right {
-    display: none;
-    float: right;
-}
-
-.list-info {
-    list-style-type: inherit;
+.user-info ul {
+    list-style-type: none;
     margin: 10 auto 10px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.user-info li {
+  display: inline;
+}
+
+.user-info ul {
+  padding-top: 6.5%;
+}
+
+.field {
+  font-size: 18px;
+}
+
+.info-nome {
+  margin-left: 51%;
+  font-size: 14px;
+}
+.info-date{
+  margin-left: 46%;
+  font-size: 14px;
+}
+.info-trab{
+  margin-left: 44%;
+  font-size: 14px;
+}
+.info-uni{
+  margin-left: 37%;
+  font-size: 14px;
+}
+.info-cur{
+  margin-left: 42%;
+  font-size: 14px;
 }
 
 .user-info {

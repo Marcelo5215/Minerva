@@ -16,6 +16,8 @@ th.achievIcon, th.titleAndDescription {
   text-align: center;
   background-color: #2D4654;
   color: #fff;
+  height: 45px;
+  font-size: 20px;
 }
 
 .achievmentsTable {
@@ -43,16 +45,16 @@ tbody tr:nth-child(2n-1) {
 .achievImage {
   margin: 10px;
   width: auto;
-  height: 100px;
+  height: 110px;
   align-items: center;
 }
 
 .achievIcon {
-  width: 15%;
+  width: 30%;
 }
 
 .titleAndDescription {
-  width: 75%;
+  width: 80%;
 }
 
 .achiev p {

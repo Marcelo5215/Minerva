@@ -1,0 +1,93 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:300);
+
+.perfil-page {
+  width: 1200px;
+  padding: 5% 0 0;
+  margin: auto;
+}
+
+.user-desc {
+  position: relative;
+  z-index: 1;
+  background: #FFFFFF;
+  max-width: 1200px;
+  height: 150px;
+  margin: 0 auto 50px;
+  padding: 45px;
+  text-align: center;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+
+.desc-left {
+    width: 200px;
+    max-width: 200px;
+    float: left;
+    margin-left: 0px;
+}
+
+.desc-right {
+    float: right;
+    width: 900px;
+    /*margin-left: 250px;*/
+}
+
+.image {
+    display: block;
+    border-style: solid;
+    border-color: #C7DBE6;
+    border-width: 3px;
+    border-radius: 50px;
+    width: 100px;
+    height: 100px;
+    margin-top: 6px;
+      margin-bottom: 6px;
+    transition: 0.5s;
+}
+
+.info-points {
+    z-index: 1;
+    height: 250px;
+    max-width: 1200px;
+    margin: 0 auto 50px;
+    /*padding: 45px;*/
+}
+
+.user-info {
+  background: #FFFFFF;
+  width: 550px;
+  height: 250px;
+  float: left;
+  text-align: left;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+
+.user-points {
+  background: #FFFFFF;
+  width: 550px;
+  height: 250px;
+  float:  right;
+  text-align: left;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+
+.user-badges {
+  position: relative;
+  z-index: 1;
+  background: #FFFFFF;
+  max-width: 1200px;
+  height: 150px;
+  margin: 0 auto 100px;
+  padding: 45px;
+  text-align: center;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+body {
+  background: #b5bec6; /* fallback for old browsers */
+  background: -webkit-linear-gradient(right, #b5bec6, #b5bec6);
+  background: -moz-linear-gradient(right, #b5bec6, #b5bec6);
+  background: -o-linear-gradient(right, #b5bec6, #b5bec6);
+  background: linear-gradient(to left, #b5bec6, #b5bec6);
+  font-family: "Roboto", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}

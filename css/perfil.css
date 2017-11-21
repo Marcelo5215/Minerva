@@ -6,6 +6,7 @@
   margin: auto;
 }
 
+
 .user-desc {
   position: relative;
   z-index: 1;
@@ -44,12 +45,23 @@
     transition: 0.5s;
 }
 
+.points {
+    max-width: 100%;
+    max-height: 100%;
+}
+
 .info-points {
     z-index: 1;
-    height: 250px;
+    height: 450px;
     max-width: 1200px;
     margin: 0 auto 50px;
     /*padding: 45px;*/
+}
+
+.badge {
+    width: auto;
+    height: 110px;
+    padding: 25px;
 }
 
 
@@ -59,14 +71,19 @@
 }
 
 .info-right {
-    display: inline;
+    display: none;
     float: right;
+}
+
+.list-info {
+    list-style-type: inherit;
+    margin: 10 auto 10px;
 }
 
 .user-info {
   background: #FFFFFF;
   width: 550px;
-  height: 250px;
+  height: 450px;
   float: left;
   text-align: left;
   box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
@@ -75,7 +92,7 @@
 .user-points {
   background: #FFFFFF;
   width: 550px;
-  height: 250px;
+  height: 450px;
   float:  right;
   text-align: left;
   box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
@@ -86,12 +103,17 @@
   z-index: 1;
   background: #FFFFFF;
   max-width: 1200px;
-  height: 150px;
+  height: 250px;
   margin: 0 auto 100px;
-  padding: 45px;
+  padding: 20px;
   text-align: center;
   box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
 }
+
+.user-badges h2 {
+    float: center;
+}
+
 body {
   background: #b5bec6; /* fallback for old browsers */
   background: -webkit-linear-gradient(right, #b5bec6, #b5bec6);
